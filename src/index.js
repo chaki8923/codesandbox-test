@@ -25,9 +25,9 @@
 // const message = `私の名前は${name}です。年齢は、${age}だす。`;
 // console.log(message);
 
-const sayHello = (name = "chaki") => console.log(`こんにちは、${name}さん`);
+// const sayHello = (name = "chaki") => console.log(`こんにちは、${name}さん`);
 
-sayHello("runa");
+// sayHello("runa");
 
 //スプレッド構文
 // const arr1 = [1,5];
@@ -76,14 +76,41 @@ sayHello("runa");
 
 // console.log(oddNum);
 
-const allName = ["田中", "山田", "茶木"];
+// const allName = ["田中", "山田", "茶木"];
 
-const newName = allName.map((name) => {
-  if (name !== "茶木") {
-    return (name += "さん");
-  } else {
-    return name;
-  }
-});
+// const newName = allName.map((name) => {
+//   if (name !== "茶木") {
+//     return (name += "さん");
+//   } else {
+//     return name;
+//   }
+// });
 
-console.log(newName);
+// console.log(newName);
+
+//三項演算子
+//条件? trueの時:falseの時
+// const true_flg = 0;
+// const val = true_flg? 'trueです':'falseです';
+
+// console.log(val);
+
+// const num = '1200';
+
+// const formatNum = typeof num === 'number'? num.toLocaleString():'数値を入力してください';
+
+// console.log(formatNum);
+
+//論理演算子の本当の意味を知ろう
+
+//||は左がfalseなら右を返す
+const num = "";
+const fee = num || "金額未設定です";
+
+console.log(fee);
+
+//&&は左がtrueなら右を返す
+const num2 = null;
+const fee2 = num2 && "なんか設定されました";
+
+console.log(fee2);
