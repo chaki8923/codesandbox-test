@@ -16,6 +16,7 @@
 
 // console.log(func1('chaki',34));
 
+//分割代入
 // const myprofile = {
 //   name:'chaki',
 //   age:'34'
